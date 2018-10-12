@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				background-image: url("wshelter\images\u1.jpg");
+			}
+			.sheader { 
+				grid-area: header; 
+				}
+			.sbutton1 { 
+				grid-area: button1; 
+				}
+			.sbutton2 { 
+				grid-area: button2; 
+				}
+			.sbutton3 { 
+				grid-area: button3; 
+				}
+			.sbutton4 { 
+				grid-area: button4; 
+				}
+			.sbutton5 { 
+				grid-area: button5; 
+				}
+			.sleft { 
+				grid-area: left; 
+				}
+			.srightup { 
+				grid-area: rightup; 
+				}
+			.srightdn { 
+				grid-area: rightdn; 
+				}
+			.sfooter { 
+				grid-area: footer; 
+				}
+
+			.grid-box {
+			  display: grid;
+			  grid-template-areas:
+				'header header header header header header header header header header'
+				'button1 button1 button2 button2 button3 button3 button4 button4 button5 button5'
+				'left left left left left rightup rightup rightup rightup rightup'
+				'left left left left left rightdn rightdn rightdn rightdn rightdn'
+				'footer footer footer footer footer footer footer footer footer footer';
+			  grid-gap: 16px;
+			  padding: 8px;
+			}
+			.grid-box > div {
+			  background-color: rgba(255, 255, 255, 0.9);
+			  text-align: center;
+			  padding: 16px 0;
+			  font-size: 32px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="grid-box">
+		  <div class="sheader">Header</div>
+		  <div class="sbutton1">Button 1</div>
+		  <div class="sbutton2">Button 2</div>
+		  <div class="sbutton3">Button 3</div>
+		  <div class="sbutton4">Button 4</div>
+		  <div class="sbutton5">Button 5</div>
+		  <div class="sleft">left</div>
+		  <div class="srightup">Right Up</div> 
+		  <div class="srightdn">Right Down</div> 
+		  <div class="sfooter">Footer</div>
+		</div>
+
+	</body>
+</html>
