@@ -37,8 +37,11 @@
 			.sfooter { 
 				grid-area: footer; 
 				}
-			.none {
-				grid-area:none;
+			.none1 {
+				grid-area:none1;
+				}
+			.none2 {
+				grid-area:none2;
 				}
 				
 			.grid-box {
@@ -46,7 +49,7 @@
 			  grid-template-areas:
 				'header header header header header header'
 				'button1 button1 button2 button2 button3 button3'
-				'none button4 button4 button5 button5 none'
+				'none1 button4 button4 button5 button5 none2'
 				'left left left left left left'
 				'left left left left left left'
 				'left left left left left left'
@@ -75,14 +78,14 @@
 				.grid-box {
 				  display: grid;
 				  grid-template-areas:
-					'none header header header header none'
-					'none button1 left left left none'
-					'none button2 left left left none'
-					'none button3 left left left none'
-					'none button4 left left left none'
-					'none button5 left left left none'
-					'none rightup rightup rightdn rightdn none'
-					'none footer footer footer footer none';
+					'none1 header header header header none2'
+					'none1 button1 left left left none2'
+					'none1 button2 left left left none2'
+					'none1 button3 left left left none2'
+					'none1 button4 left left left none2'
+					'none1 button5 left left left none2'
+					'none1 rightup rightup rightdn rightdn none2'
+					'none1 footer footer footer footer none2';
 				  grid-gap: 16px;
 				  padding: 8px;
 				}
@@ -106,11 +109,11 @@
 				.grid-box {
 				  display: grid;
 				  grid-template-areas:
-					'none header header header header header header header header header header none'
-					'none button1 button1 button2 button2 button3 button3 button4 button4 button5 button5 none'
-					'none left left left left left rightup rightup rightup rightup rightup none'
-					'none left left left left left rightdn rightdn rightdn rightdn rightdn none'
-					'none footer footer footer footer footer footer footer footer footer footer none';
+					'none1 header header header header header header header header header header none2'
+					'none1 button1 button1 button2 button2 button3 button3 button4 button4 button5 button5 none2'
+					'none1 left left left left left rightup rightup rightup rightup rightup none2'
+					'none1 left left left left left rightdn rightdn rightdn rightdn rightdn none2'
+					'none1 footer footer footer footer footer footer footer footer footer footer none2';
 				  grid-gap: 16px;
 				  padding: 8px;
 				}
@@ -136,13 +139,13 @@
 	<body>
 		<div class="grid-box">
 		  <div class="sheader">Header</div>
-		  <div class="none"></div>
+		  <div class="none1"> </div>
 		  <div class="sbutton1">Button 1</div>
 		  <div class="sbutton2">Button 2</div>
 		  <div class="sbutton3">Button 3</div>
 		  <div class="sbutton4">Button 4</div>
 		  <div class="sbutton5">Button 5</div>
-		  <div class="none"></div>
+		  <div class="none2"> </div>
 		  <div class="sleft">left</br>
 			<img src="images/home/u32.png" alt="XKCD">
 		  </div>
